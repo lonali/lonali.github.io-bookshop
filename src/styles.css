@@ -1,0 +1,81 @@
+@media (max-width: 1000px) {
+    .bshop {
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width: 500px) {
+    .bshop {
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: #fefae0;
+}
+
+.navbar {
+    background-color: #d4a373;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fefae0;
+    margin-bottom: 30px;
+}
+
+h1 {
+    padding: 50px 550px 10px 0px;
+}
+
+.cart {
+    padding: 50px 70px 10px 0px;
+}
+
+.cart-logo {
+    width: 40px;
+    cursor: pointer;
+}
+
+.cartAmount {
+    background-color: #faedcd;
+    color: #d4a373;
+    font-size: 18px;
+}
+
+/* 
+This is where shop starts  */
+
+.bshop {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 40px;
+    justify-content: center;
+}
+
+.item {
+    border: 2px solid #faedcd;
+    border-radius: 4px;
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+}
+
+.price-orderN {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
