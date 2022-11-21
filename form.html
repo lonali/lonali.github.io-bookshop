@@ -77,7 +77,26 @@
                     <label>
                         <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
                     </label>
-                    <input type="submit" id="register" value="Complete">
+                    <input type="submit" value="Complete" disabled="disabled">
+
+                    <script>
+                        var form = document.querySelector('form')
+                        var inputs = document.querySelectorAll('input')
+                        var required_inputs = document.querySelectorAll('input[required]')
+                        var register = document.querySelector('input[type="submit"]')
+                        form.addEventListener('keyup', function (e) {
+                            var disabled = false
+                            required_inputs.forEach(function (input, index) {
+                                if (input.value === '' || !input.value.replace(/\s/g, '').length) {
+                                    disabled = true
+                                }
+                            })
+                            if (disabled) {
+                                register.setAttribute('disabled', 'disabled')
+                            } else {
+                                register.removeAttribute('disabled')
+                            }
+                        })</script>
                 </form>
             </div>
         </div>
