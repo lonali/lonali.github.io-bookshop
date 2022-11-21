@@ -77,27 +77,7 @@
                     <label>
                         <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
                     </label>
-                    <input type="submit" id="register" value="Complete" disabled="disabled">
-
-                    <script>
-                        (function () {
-                            $('form > input').keyup(function () {
-
-                                var empty = false;
-                                $('form > input').each(function () {
-                                    if ($(this).val() == '') {
-                                        empty = true;
-                                    }
-                                });
-
-                                if (empty) {
-                                    $('#register').attr('disabled', 'disabled');
-                                } else {
-                                    $('#register').removeAttr('disabled');
-                                }
-                            });
-                        })()
-                    </script>
+                    <input type="submit" id="register" value="Complete">
                 </form>
             </div>
         </div>
