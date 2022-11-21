@@ -1,10 +1,10 @@
-@media (max-width: 1000px) {
+@media(max-width:1000px) {
     .bshop {
         grid-template-columns: repeat(2, 223px);
     }
 }
 
-@media (max-width: 500px) {
+@media(max-width:500px) {
     .bshop {
         grid-template-columns: repeat(1, 223px);
     }
@@ -15,7 +15,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -33,11 +32,11 @@ body {
 }
 
 h1 {
-    padding: 50px 550px 10px 0px;
+    padding: 50px550px10px0px;
 }
 
 .cart {
-    padding: 50px 70px 10px 0px;
+    padding: 50px70px10px0px;
 }
 
 .cart-logo {
@@ -51,9 +50,7 @@ h1 {
     font-size: 18px;
 }
 
-/* 
-This is where shop starts  */
-
+/*Thisiswhereshopstarts*/
 .bshop {
     display: grid;
     grid-template-columns: repeat(4, 250px);
@@ -62,9 +59,8 @@ This is where shop starts  */
 }
 
 .item {
-    border: 2px solid #faedcd;
+    border: 2pxsolid#faedcd;
     border-radius: 4px;
-
 }
 
 .description {
